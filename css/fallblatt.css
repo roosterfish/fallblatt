@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300&display=swap");
+
+.splitFlapScaleLayer {
+    float: left;
+}
+.splitFlapContainer {
+    font-family: 'Overpass Mono', monospace;
+    color: lightgray;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 9px -2px black;
+    z-index: 1;
+}
+.splitFlapContainerDividerBase > div {
+    background-color: rgb(31, 29, 29);
+    position: absolute;
+}
+.splitFlapContainerDivider {
+    width: 100%;
+    height: 2%;
+    top: 49%;
+}
+.splitFlapContainerDividerLinkLeft {
+    width: 4%;
+    height: 10%;
+    top: 45%;
+}
+.splitFlapContainerDividerLinkRight {
+    width: 4%;
+    height: 10%;
+    top: 45%;
+    right: 0;
+}
+.splitFlapContainerChar {
+    font-size: 140px;
+    display: inline-block;
+    margin-top: -30px;
+}
+.splitFlapCharBrackets {
+    font-size: 120px;
+    margin-top: -25px;
+}
+.splitFlapCharSpecial {
+    font-size: 110px;
+    margin-top: -15px;
+}
+.splitFlapCharExtremes {
+    margin-top: -55px;
+}
+.splitFlapCharTilde {
+    margin-top: -30px;
+    margin-left: -10px
+}
+.splitFlapCharAsterisk {
+    font-size: 110px;
+    margin-top: -40px;
+}
+.splitFlapCharColourBase {
+    text-indent: 100%;
+    white-space: nowrap;
+}
+.splitFlapCharColourRed {
+    background-color: lightcoral;
+}
+.splitFlapCharColourBlue {
+    background-color: lightsteelblue;
+}
+.splitFlapCharColourGreen {
+    background-color: lightgreen;
+}
+.splitFlapCharColourYellow {
+    background-color: lightgoldenrodyellow;
+}
+.splitFlapCharColourOrange {
+    background-color: lightsalmon;
+}
+.splitFlapCharColourWhite {
+    background-color: whitesmoke;
+}

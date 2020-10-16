@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="css/fallblatt.css" type="text/css" rel="stylesheet">
+        <script src="src/jquery-3.5.1.min.js"></script>
+        <script src="src/fallblatt.js"></script>
+        <style type="text/css">
+            body, html {
+                padding: 0;
+                margin: 0;
+                background-color: #303030;
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="width:100%;height:100%">
+            <div id="splitFlapCanvas"></div>
+        </div>
+
+        <script type="text/javascript">
+            $(function() {
+                function rotate(canvas) {
+                    for (var i=0; i<=canvas.flapsX; i++) {
+                        for (var j=0; j<=canvas.flapsY; j++) {
+                            $("#splitFlapCanvas").fallBlatt("display", {
+                                pos: [i,j],
+                                content: $.fn.fallBlatt.defaults.flapCharset.chars[
+                                    Math.floor(Math.random() * $.fn.fallBlatt.defaults.flapCharset.chars.length)
+                                ]
+                            });
+                        }
+                    }
+                }
+
+                var canvas = $("#splitFlapCanvas").fallBlatt({
+                    flapSpacingExtraWidth: 10,
+                    flapSpacingExtraHeight: 10,
+                    flapScale: 2
+                });
+
+                rotate(canvas);
+                setInterval(function() {
+                    rotate(canvas);
+                }, 9000);
+            });
+        </script>
+    </body>
+</html>
