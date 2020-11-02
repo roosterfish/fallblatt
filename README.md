@@ -20,7 +20,7 @@ The styling of the entire canvas can be easily modified by changing the respecti
 
 The plugin uses jQuery as a hard dependency. Make sure you have a recent version of jQuery loaded before you create a new instance of `fallBlatt()`.
 
-Per default fallblatt tries to accomodate itself within the parent box that is provided for the rendering of the canvas. If the size of the flaps or the scaling doesn't allow the placement of at least on flap, fallblatt will exit with a console error.
+Per default fallblatt tries to accomodate itself within the parent box that is provided for the rendering of the canvas. If the size of the flaps or the scaling doesn't allow the placement of at least one flap, fallblatt will exit with a console error.
 
 ### Options
 
